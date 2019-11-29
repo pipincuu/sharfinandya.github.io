@@ -1,0 +1,395 @@
+* {box-sizing: border-box}
+body {
+  margin : 0;
+  font-family: "Lato", sans-serif;
+  background-color: #FAEBD7 ;
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  width : 1170px;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 0 30px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.skills-area {
+  width: 100%;
+}
+
+.single-skills{
+  list-style: none;
+  padding-top: 25px;
+}
+
+.single-skills li {
+  margin-bottom: 40px;
+  height: 15px;
+}
+
+.single-skills li {
+  position: relative;
+  top: -35px;
+  font-size: 20px;
+}
+
+.line {
+  position: absolute;
+  background: #333;
+  margin: 2px 300px;
+  height: 15px;
+}
+
+.web {
+  width: 60%;
+  -webkit-animation:web 2s ease-out;
+  -o-animation:development 2s ease-out;
+  animation: web 2s ease-out;
+}
+
+.development {
+  width: 40%;
+  -webkit-animation:development 2s ease-out;
+  -o-animation:development 2s ease-out;
+  animation: development 2s ease-out;
+}
+
+.seo {
+  width: 50%;
+  -webkit-animation:seo 2s ease-out;
+  -o-animation:seo 2s ease-out;
+  animation: seo 2s ease-out;
+}
+
+.marketing {
+  width: 40%;
+  -webkit-animation:marketing 2s ease-out;
+  -o-animation:marketing 2s ease-out;
+  animation: marketing 2s ease-out;
+}
+
+.photo {
+  width: 30%;
+  -webkit-animation:photo 2s ease-out;
+  -o-animation:photo 2s ease-out;
+  animation: photo 2s ease-out;
+}
+
+@-moz-keyframe web {
+0% {
+  width: 0;
+}
+100% {
+  width: 70%;
+}
+
+
+
+}
+
+body, html {
+    height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.navigation {
+ display: flex;
+ flex-direction: row;
+ align-content: center;
+ justify-content: center;
+ height: 48px;
+}
+
+.button {
+ padding: 16px;
+ border: 1px solid #fff;
+}
+
+.button:hover {
+ border: 1px solid salmon;
+ cursor: pointer;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height : calc(100vh-48px);
+  padding: 280px;
+  height: 75vh;
+  background-color: #f1f1f1
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("komputer.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.avatarkoe {
+  vertical-align: middle;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  width: 100%
+  overflow : auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* timeline untuk work experience */
+/* The actual timeline (the vertical ruler) */
+/* .h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 56px;
+  padding: 20px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.column {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.column::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #B0E0E6;
+  position: relative;
+  border-radius: 6px;
+
+
+}
+
+/* @media screen and (max-width: 600px){}
+#timeline {
+    display: initial;
+    left: 14px;
+}
+     */
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#pendidikan {
+  display: none;
+}
+
+#work {
+  display: none;
+}
+
+#skill {
+  display: none;
+}
+
+#timeline {
+  display: none;
+}
+
+#pencapaian {
+  display: none;
+}
+
+.pendidikann {
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.kampus {
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  align-items: center;
+}
+ .workexperience {
+  background-color: #D2691E;
+  padding: 20px;
+}
+
+.achievement {
+  align-items: center;
+  text-align: center;
+  color: black;
+}
